@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Assignments</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="AssignmentForm/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <form class=form>
+    <form class=form action="AssignmentList/assignmentList.html">
       <label for='AssignmentName'>Assignment Name</label>
       <input type='text' id='AssignmentName' name='AssignmentName'><br/>
       <label for= 'DueDate'>Due Date</label> 
@@ -16,7 +16,8 @@
       <input type='text' id='AssignmentLink' name='AssignmentLink'><br/>
       <label for='AssignmentClass'>Assignment Class</label>
       <input type='text' id='AssignmentLink' name='AssignmentClass'><br/>
+      <input type="submit" value="Submit" id= 'submit' onClick='submit()'>
     </form>
-    <script src="script.js"></script>
+    <script src="AssignmentForm/script.js"></script>
   </body>
 </html>
