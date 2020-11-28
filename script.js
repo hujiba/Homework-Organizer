@@ -6,17 +6,24 @@ function sub()
  var ac = document.getElementById('AssignmentClass').value;
  var td = document.getElementById('dropdown').value;
 
-if (an == null){
+if (an.length == 0){
   alert("Assignment Name is required")
 }
+else {
 
+if (al.length > 0){
+  linkHtml = "<a href=" + al + " target=\"_blank\">"
+}
+else {
+  linkHtml = ""
+}
 var table = document.getElementById("table");
 var rows = table.rows.length; 
 var row = table.insertRow(rows);
 
 if (td == "To Do") {
   var cell1 = row.insertCell(0);
-  cell1.innerHTML = "<div class=\"myDIV\"><a href=" + al + " target=\"_blank\">" + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>";
+  cell1.innerHTML = "<div class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>";
 }
 else if (td == "Doing") {
   var cell1 = row.insertCell(0);
@@ -30,10 +37,4 @@ else {
   cell3.innerHTML = "<div class=\"myDIV\"><a href=" + al + " target=\"_blank\">" + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
 }
 }
-
-var cell1 = row.insertCell(0);
-var cell2 = row.insertCell(1);
-var cell3 = row.insertCell(2);
-
-
-
+}
