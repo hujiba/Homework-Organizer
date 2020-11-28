@@ -31,13 +31,13 @@ else if (td == "Doing") {
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
-  cell2.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\"><a href=" + al + " target=\"_blank\">" + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
+  cell2.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
 }
 else {
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
-  cell3.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\"><a href=" + al + " target=\"_blank\">" + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
+  cell3.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
 }
 }
 }
