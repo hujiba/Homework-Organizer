@@ -24,7 +24,16 @@ th {
 
 td {
   font-size: 13px;
-  padding-bottom: 100px;
+  padding: 2px;
+}
+
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: black;
 }
 
 label {
