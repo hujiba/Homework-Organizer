@@ -1,5 +1,6 @@
-function submit()
+function sub()
 {
-  var an=getElemantById('AssignmentName')
-  
+ var an=document.getElementById('AssignmentName')
+ 
 }
+
