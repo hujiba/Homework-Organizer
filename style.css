@@ -42,7 +42,8 @@ text-align: left;
 }
 body {
 background-color: rgb(101, 143, 190);
-text-align: center
+text-align: center;
+min-width: 300px;
 }
 table, th, td {
   border: 1px solid black;
