@@ -3,7 +3,7 @@
   "name": "Homework Organizer",
   "version": "1.0",
 
-  "permissions": ["<all_urls>"],
+  "permissions": ["<all_urls>", "storage"],
   "description": "Organize ya homework",
   "browser_action": {
     "default_popup": "index.html"
