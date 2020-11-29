@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignments</title>
+    <link href="assignments.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="assign">
+    <form>
+      <label for='AssignmentName'>Assignment Name:</label>
+      <input type='text' id='AssignmentName' required name='AssignmentName'><br/>
+      <label for= 'DueDate'>Due Date: </label> 
+      <input type='date' id= 'DueDate' value="DueDate"><br/>
+      <label for='AssignmentLink'>Assignment Link: </label>
+      <input type='url' id='AssignmentLink' name='AssignmentLink' placeholder="https://example.com" pattern="*://.*"><br/>
+      <label for='AssignmentClass'>Assignment Class: </label>
+      <input type='text' id='AssignmentClass' name='AssignmentClass'><br/>
+      <select name="dropdown" id="dropdown">
+        <option value="To Do">To Do</option>
+        <option value="Doing">Doing</option>
+        <option value="Done">Done</option>
+      </select>
+      <br>
+      <input type="button" value="Submit" id= 'submit'onclick='sub()' >
+    </form>
+    </div>
+  <div class="list"> 
+    <table id="table" style="width:100%">
+    <tr>
+      <th>To Do</th>
+      <th>Doing</th>
+      <th>Done</th> 
+    </tr>
+    </table>
+  </body>
+</html>

@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Assignments</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div class="assign">
-    <form>
-      <label for='AssignmentName'>Assignment Name:</label>
-      <input type='text' id='AssignmentName' required name='AssignmentName'><br/>
-      <label for= 'DueDate'>Due Date: </label> 
-      <input type='date' id= 'DueDate' value="DueDate"><br/>
-      <label for='AssignmentLink'>Assignment Link: </label>
-      <input type='url' id='AssignmentLink' name='AssignmentLink' placeholder="https://example.com" pattern="*://.*"><br/>
-      <label for='AssignmentClass'>Assignment Class: </label>
-      <input type='text' id='AssignmentClass' name='AssignmentClass'><br/>
-      <select name="dropdown" id="dropdown">
-        <option value="To Do">To Do</option>
-        <option value="Doing">Doing</option>
-        <option value="Done">Done</option>
-      </select>
-      <br>
-      <input type="button" value="Submit" id= 'submit'onclick='sub()' >
-    </form>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Login-SignUp-Page/style.css">
+  <script defer src="Login-SignUp-Page/script.js"></script>
+</head>
+
+<body>
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
     </div>
-  <div class="list"> 
-    <table id="table" style="width:100%">
-    <tr>
-      <th>To Do</th>
-      <th>Doing</th>
-      <th>Done</th> 
-    </tr>
-    </table>
-  </body>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <button type="submit"  id="login-form-submit">Login</button>
+      <button type="submit"  id="signUp-form-submit">SignUp</button>
+    </form>
+  
+  </main>
+</body>
+
 </html>
