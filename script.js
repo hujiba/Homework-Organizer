@@ -17,6 +17,13 @@ if (al.length > 0){
 else {
   linkHtml = ""
 }
+
+if (dd != "" && ac != ""){
+  hoverText = dd + " - " + ac
+}
+else {
+  hoverText = dd + ac
+}
 var table = document.getElementById("table");
 var rows = table.rows.length; 
 var row = table.insertRow(rows);
@@ -25,19 +32,19 @@ if (td == "To Do") {
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
-  cell1.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>";
+  cell1.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + hoverText + "</div>";
 }
 else if (td == "Doing") {
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
-  cell2.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
+  cell2.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + hoverText + "</div>"; 
 }
 else {
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
   var cell3 = row.insertCell(2);
-  cell3.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + dd + " - " + ac + "</div>"; 
+  cell3.innerHTML = "<div ondblclick=\"del()\" class=\"myDIV\">" + linkHtml + an + "</a></div> <div class=\"hide\">" + hoverText + "</div>"; 
 }
 }
 }
