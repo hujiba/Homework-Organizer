@@ -42,8 +42,10 @@ else {
 }
 }
 function del() {
-  alert("h")
-  current = rows - 1
-  console.log(current)
-  document.getElementById("table").deleteRow(current); 
+
+//$('#table').find('tr').click( function(){
+//table.deleteRow($(this).index()) );
+//});
+
+table.deleteRow(table.rows.length - 1); 
 }
