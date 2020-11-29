@@ -1,90 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="homepage.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="Login-SignUp-Page/style.css">
+  <script defer src="Login-SignUp-Page/script.js"></script>
 </head>
+
 <body>
-
-<div class="topnav">
-  <a class="active" href="#home">Assigfffffffnments</a>
-  <a href="#news">Notifications</a>
-  <a href="#contact">Courses</a>
-  <a href="#about">Home</a>
-</div>
-
-<div style="padding-left:16px;">
-  <h1>Courses</h1>
-  <div class="main">
-    <ul class="cards">
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="profileicon2.jpg"></div>
-          <div class="card_content">
-            <h2 class="card_title">Course 1</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Open</button>
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="profileicon2.jpg"></div>
-          <div class="card_content">
-            <h2 class="card_title">Course 2</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Open</button>
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="profileicon2.jpg"></div>
-          <div class="card_content">
-            <h2 class="card_title">Course 3</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Open</button>
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="profileicon2.jpg"></div>
-          <div class="card_content">
-            <h2 class="card_title">Course 4</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Open</button>
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="profileicon2.jpg"></div>
-          <div class="card_content">
-            <h2 class="card_title">Course 5</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Open</button>
-          </div>
-        </div>
-      </li>
-      <li class="cards_item">
-        <div class="card">
-          <div class="card_image"><img src="profileicon2.jpg"></div>
-          <div class="card_content">
-            <h2 class="card_title">Course 6</h2>
-            <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-            <button class="btn card_btn">Open</button>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <h3 class="rights">@All Rights Reserved UClassroom </h3>
-
-
-
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <button type="submit"  id="login-form-submit">Login</button>
+      <button type="submit"  id="signUp-form-submit">SignUp</button>
+    </form>
+  
+  </main>
 </body>
+
 </html>

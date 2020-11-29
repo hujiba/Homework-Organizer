@@ -42,5 +42,8 @@ else {
 }
 }
 function del() {
-  document.getElementById("table").deleteRow(rows - 1); 
+  alert("h")
+  current = rows - 1
+  console.log(current)
+  document.getElementById("table").deleteRow(current); 
 }

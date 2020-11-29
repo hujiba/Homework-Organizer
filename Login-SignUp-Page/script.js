@@ -11,7 +11,7 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "user" && password === "pass") {
     
-        window.location.href = "HomePage.html";
+        window.location.href = "Login-SignUp-Page/HomePage.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
