@@ -43,9 +43,13 @@ else {
 }
 function del() {
 
-$('#table').find('tr').click( function(){
-table.deleteRow($(this).index()) );
+$("table tr").not("thead tr").unbind().dblclick(function(){
+    clickedRow = this.rowIndex
+    if (clickedRow == 0) {
+      null
+    }
+    else {
+    table.deleteRow(clickedRow);
+    }
 });
-
-table.deleteRow(table.rows.length - 1); 
 }

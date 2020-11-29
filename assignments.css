@@ -6,7 +6,7 @@ text-align: center;
 }
 html {
   height: 100%;
-  }
+}
 .assign {
 padding: auto; 
 margin: auto;
@@ -14,7 +14,7 @@ margin: auto;
 
 .list {
 padding: auto; 
-margin: 30px;
+margin: 5px;
 }
 
 th {
@@ -97,4 +97,8 @@ table, th, td {
 .topnav a:hover {
   background-color: #ddd;
   color: rgb(62, 57, 57);
+}
+
+p {
+  color: gray;
 }
