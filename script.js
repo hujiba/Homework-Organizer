@@ -43,9 +43,9 @@ else {
 }
 function del() {
 
-//$('#table').find('tr').click( function(){
-//table.deleteRow($(this).index()) );
-//});
+$('#table').find('tr').click( function(){
+table.deleteRow($(this).index()) );
+});
 
 table.deleteRow(table.rows.length - 1); 
 }
